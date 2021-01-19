@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stimission"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sti.lipa.dev.besti.STIMission"
+    android:background="@drawable/backg"
+    android:layout_height="900dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bannerms"
+        android:id="@+id/imageView11"
+        android:foregroundGravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="\n We are an institution committed \n to provide knowledge through \nthe development and delivery\n of superior learning systems.\n
+
+We strive to provide \n optimum value to all our stakeholders\n – our students, our faculty members \n, our employees, our partners, our shareholders \n, and our community. \n
+
+We will pursue this mission \n with utmost integrity, dedication, \n transparency, and creativity. \n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:background="@drawable/edittext"
+        android:textColor="@android:color/background_light"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/imageView11"
+        android:layout_marginEnd="40dp" />
+</RelativeLayout>

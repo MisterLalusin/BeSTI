@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sti.lipa.dev.besti.UpdateTeacherAccount"
+    android:background="@drawable/backg">
+
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="31dp"
+        android:id="@+id/btxteditlname"
+        android:textSize="36sp"
+        android:hint="   Last Name"
+        android:layout_below="@+id/btxteditfname"
+        android:layout_alignStart="@+id/btxteditfname"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/btxteditsnumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/btxteditemail"
+        android:hint="   E-mail"
+        android:textSize="36sp"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="34dp"
+        android:id="@+id/btxtcpword"
+        android:hint="  Confirm Password"
+        android:textSize="36sp"
+        android:layout_below="@+id/btxteditpword"
+        android:layout_alignStart="@+id/btxteditpword"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/btxteditphone"
+        android:textSize="36sp"
+        android:hint="   Phone Number"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/btxtcpword"
+        android:layout_alignStart="@+id/btxtcpword"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="34dp"
+        android:id="@+id/btxteditpword"
+        android:hint="   Password"
+        android:textSize="36sp"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/btxteditemail"
+        android:layout_alignStart="@+id/btxteditemail"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="113dp"
+        android:id="@+id/btxteditfname"
+        android:layout_height="93dp"
+        android:textSize="36sp"
+        android:hint="   First Name"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btxteditemail" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="35dp"
+        android:id="@+id/btxteditsnumber"
+        android:hint="   Teacher Number"
+        android:textSize="36sp"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/btxteditlname"
+        android:layout_alignStart="@+id/btxteditlname" />
+
+    <Button
+        android:text="UPDATE ACCOUNT"
+        android:layout_width="300dp"
+        android:id="@+id/bbtnreg"
+        android:background="@drawable/btn"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btxteditphone"
+        android:layout_centerHorizontal="true"
+        android:layout_height="66dp" />
+
+    <Button
+        android:text="DELETE ACCOUNT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndel"
+        android:background="@drawable/btn"
+        android:textColor="?attr/colorButtonNormal"
+        android:layout_below="@+id/bbtnreg"
+        android:layout_marginTop="21dp"
+        android:layout_alignEnd="@+id/bbtnreg"
+        android:layout_alignStart="@+id/bbtnreg"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>

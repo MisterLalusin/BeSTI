@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cashier"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sti.lipa.dev.besti.CashierActivity"
+    android:background="@drawable/backg">
+
+    <TextView
+        android:text="CASHIER SCHEDULE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/txtstatuscashier"
+        android:textSize="36sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_orange_light"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Update Schedule"
+        android:layout_width="match_parent"
+        android:id="@+id/btnresPin"
+        android:onClick="PostAnnouncementcash"
+        android:background="@drawable/btn"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_height="100dp"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="normal|bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/btnresPin"
+        android:background="@drawable/edittext"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_height="200dp">
+
+        <RadioButton
+            android:text="Available "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/chckbox5"
+            android:layout_marginStart="10dp"
+            android:id="@+id/availradio"
+            android:textSize="36sp"
+            android:fontFamily="sans-serif-smallcaps" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/unavailradio"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/chckbox6"
+            android:layout_marginBottom="66dp"
+            android:text="Unavailable "
+            android:textSize="36sp"
+            android:fontFamily="sans-serif-smallcaps" />
+    </RadioGroup>
+
+    <CheckBox
+        android:text="7:30-9:00"
+        android:id="@+id/chckbx1"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/chckbox2"
+        android:layout_alignParentStart="true"
+        android:layout_width="200dp"
+        android:fontFamily="casual"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:text="9:00AM-10:30AM"
+        android:layout_width="200dp"
+        android:id="@+id/chckbox2"
+
+        android:layout_marginTop="39dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtstatuscashier"
+        android:layout_toEndOf="@+id/chckbx1"
+        android:layout_marginStart="34dp"
+        android:fontFamily="casual"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:text="3:00PM-4:30PM"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/checkBox6"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/chckbox4"
+        android:layout_alignStart="@+id/chckbox4"
+        android:fontFamily="casual"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:text="12:00AM-1:30PM"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/chckbox4"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/chckbox2"
+        android:layout_alignStart="@+id/chckbox2"
+        android:fontFamily="casual"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:text="10:30AM-12:00PM"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/checkBox3"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/chckbox4"
+        android:layout_toStartOf="@+id/chckbox2"
+        android:fontFamily="casual"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:text="1:30PM-3:00PM"
+        android:layout_height="50dp"
+        android:id="@+id/chckbox5"
+        android:layout_width="200dp"
+        android:layout_alignBaseline="@+id/checkBox6"
+        android:layout_alignBottom="@+id/checkBox6"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/checkBox3"
+        android:fontFamily="casual"
+        android:textSize="20sp" />
+
+</RelativeLayout>

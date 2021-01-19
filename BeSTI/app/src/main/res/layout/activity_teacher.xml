@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_teacher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sti.lipa.dev.besti.Teacher"
+    android:background="@drawable/backg">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        app:srcCompat="@drawable/ght2"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_height="400dp"
+        app:srcCompat="@drawable/ght1"
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignEnd="@+id/btnresjcktS" />
+
+    <Button
+        android:id="@+id/btnresjcktS"
+        android:background="#000FFFFF"
+        android:textSize="36sp"
+        android:onClick="viewteacher"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="50dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:id="@+id/button5"
+        android:background="#000FFFFF"
+        android:textSize="36sp"
+        android:onClick="createteacher"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_marginTop="324dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

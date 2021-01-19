@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cashier_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sti.lipa.dev.besti.CashierAccount"
+    android:background="@drawable/backg">
+
+    <Button
+        android:text="Change Password"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/button4"
+        android:background="@drawable/btn"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="48sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/cashiersched"
+        android:layout_alignStart="@+id/cashiersched"
+        android:layout_alignEnd="@+id/cashiersched"
+        android:onClick="cshrpword" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/chr"
+        android:layout_marginTop="143dp"
+        android:id="@+id/imageView9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="109dp"
+        android:id="@+id/cashiersched"
+        android:background="@drawable/btn"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="48sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:onClick="cshrsched"
+        android:layout_below="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView9"
+        android:layout_alignEnd="@+id/imageView9" />
+
+    <Button
+        android:text="Reservations"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/cashierpword"
+        android:background="@drawable/btn"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="48sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:onClick="cshreserve"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="37dp"
+        android:layout_alignEnd="@+id/button4" />
+
+</RelativeLayout>

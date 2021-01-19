@@ -1,0 +1,92 @@
+package sti.lipa.dev.besti;
+
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+import android.database.Cursor;
+import java.util.ArrayList;
+
+public class ViewStudents extends AppCompatActivity {
+    DatabaseHelper openHelper;
+    SQLiteDatabase db;
+    Cursor datastudents;
+    private ListView mListView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_view_students);
+        mListView = (ListView) findViewById(R.id.listview) ;
+
+        openHelper = new DatabaseHelper(this);
+        db = openHelper.getWritableDatabase();
+        populateListView();
+    }
+
+    private void populateListView() {
+        Cursor data = openHelper.getDataStudent();
+        ArrayList<String> listData = new ArrayList<>();
+        while (data.moveToNext()) {
+            listData.add(data.getString(1));
+        }
+        ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listData);
+        mListView.setAdapter(adapter);
+
+
+        //rovic mas poge ke emman
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String name = adapterView.getItemAtPosition(i).toString();
+
+                Cursor datastudents= db.rawQuery("SELECT ID FROM tbluser WHERE Show=?",new String[]{name});
+                int itemID = -1;
+                while (datastudents.moveToNext()) {
+                    itemID = datastudents.getInt(0);
+                }
+                if(itemID > -1) {
+                    Intent editScreenIntent = new Intent(getApplicationContext(),UpdateStudentAccount.class);
+                    editScreenIntent.putExtra("name", name);
+                    startActivity(editScreenIntent);
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "NO ID associated with that name", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        //rovic mas poge ke emman
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

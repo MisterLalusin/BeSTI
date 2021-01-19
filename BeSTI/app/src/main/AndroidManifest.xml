@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sti.lipa.dev.besti">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/stivitaicon"
+        android:label="STI VITA"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".GuestHome">
+        </activity>
+        <activity android:name=".Register" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/PopUpAct" />
+        <activity android:name=".Admin" />
+        <activity android:name=".Teacher" />
+        <activity android:name=".CreateTeacherAccount" />
+        <activity
+            android:name=".ViewTeachers"
+            android:theme="@style/PopUpAct" />
+        <activity android:name=".UpdateTeacherAccount" />
+        <activity android:name=".UpdateAdminPassword" />
+        <activity
+            android:name=".ViewStudents"
+            android:theme="@style/PopUpAct" />
+        <activity android:name=".UpdateStudentAccount" />
+        <activity android:name=".CreateAnnouncement" />
+        <activity android:name=".TeacherAccount" />
+        <activity
+            android:name=".ScheduleUser"
+            android:theme="@style/PopUpAct" />
+        <activity android:name=".StudentAccount" />
+        <activity
+            android:name=".ScheduleTeacher"
+            android:theme="@style/PopUpAct" />
+        <activity android:name=".TutorFinder" />
+        <activity
+            android:name=".CashierActivity"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".UpdatePasswordCashier"
+            android:theme="@style/PopUpAct" />
+        <activity android:name=".CashierAccount" />
+        <activity
+            android:name=".STIHymnActivity"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".TeacherFinder"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".ViewCashierUpdate"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".CashierSched"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".UpdatePassUser"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".ViewCashierInfo"
+            android:theme="@style/PopUpAct" />
+        <activity android:name=".UpdatePasswordTeacher"
+            android:theme="@style/PopUpAct"/>
+        <activity
+            android:name=".CreateAnnouncementTeacher"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".ListViewCashier"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".UpdateReservationCashier"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".Merchandise"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".STIVision"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".STIMission"
+            android:theme="@style/PopUpAct" />
+        <activity
+            android:name=".ViewMyReservation"
+            android:theme="@style/PopUpAct" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

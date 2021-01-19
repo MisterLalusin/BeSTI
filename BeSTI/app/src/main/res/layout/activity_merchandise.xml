@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_merchandise"
+    android:layout_width="match_parent"
+    android:layout_height="900dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sti.lipa.dev.besti.Merchandise"
+    android:background="@drawable/backg">
+
+
+    <Button
+        android:text="Washday Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresWDL"
+        android:layout_below="@+id/btnresWDM"
+        android:onClick="washdaylarge"
+        android:layout_alignStart="@+id/btnresWDM"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_alignEnd="@+id/btnresWDM"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+    <Button
+        android:text="Washday Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresWDM"
+        android:onClick="washdaymedium"
+        android:layout_below="@+id/btnresWDS"
+        android:layout_alignStart="@+id/btnresWDS"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_alignEnd="@+id/btnresWDS"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+
+    <Button
+        android:text="  SHS Jacket Large  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresjcktL"
+        android:onClick="shsjakcketlarge"
+        android:layout_below="@+id/btnresjcktM"
+        android:layout_alignStart="@+id/btnresjcktM"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_alignEnd="@+id/btnresjcktM"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+
+    <Button
+        android:text="  SHS Jacket Medium  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresjcktM"
+        android:onClick="shsjakcketmedium"
+        android:layout_below="@+id/btnresjcktS"
+        android:layout_alignStart="@+id/btnresjcktS"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_alignEnd="@+id/btnresjcktS"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+    <Button
+        android:text="  SHS Jacket Extra Large  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresjcktXL"
+        android:onClick="shsjakcketxlarge"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_below="@+id/btnresjcktL"
+        android:layout_alignStart="@+id/btnresjcktL"
+        android:layout_alignEnd="@+id/btnresjcktL"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+
+    <Button
+        android:text="  SHS Jacket  Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresjcktS"
+        android:onClick="shsjakcketsmall"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/btnresPin"
+        android:layout_alignEnd="@+id/btnresWDL"
+        android:layout_alignStart="@+id/btnresPin" />
+
+    <Button
+        android:text="  STI Button Pin  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresPin"
+        android:onClick="buttonpin"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/btnresWDL"
+        android:layout_alignEnd="@+id/btnresWDL"
+        android:layout_alignStart="@+id/btnresWDL"
+        android:gravity="center"/>
+
+    <Button
+        android:text="  STI Official Cap  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresCap"
+        android:onClick="stioriginalscap"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/btnresjcktXL"
+        android:layout_alignEnd="@+id/btnresjcktXL"
+        android:layout_alignStart="@+id/btnresPin"
+        android:gravity="center"/>
+
+    <Button
+        android:text="Washday Small"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:id="@+id/btnresWDS"
+        android:onClick="washdaysmall"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/btn"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:layout_marginTop="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bannermer"
+        android:id="@+id/imageView13"
+        android:foregroundGravity="center"
+        android:layout_marginEnd="253dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

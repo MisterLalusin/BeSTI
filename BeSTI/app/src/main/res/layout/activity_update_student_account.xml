@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sti.lipa.dev.besti.UpdateTeacherAccount"
+    android:background="@drawable/backg">
+
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="31dp"
+        android:id="@+id/dtxteditlname"
+        android:textSize="36sp"
+        android:hint="   Last Name"
+        android:layout_below="@+id/dtxteditfname"
+        android:layout_alignStart="@+id/dtxteditfname"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/dtxteditsnumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/dtxteditemail"
+        android:hint="   E-mail"
+        android:textSize="36sp"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="34dp"
+        android:id="@+id/dtxtcpword"
+        android:hint="  Confirm Password"
+        android:textSize="36sp"
+        android:layout_below="@+id/dtxteditpword"
+        android:layout_alignStart="@+id/dtxteditpword"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/dtxteditphone"
+        android:textSize="36sp"
+        android:hint="   Phone Number"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/dtxtcpword"
+        android:layout_alignStart="@+id/dtxtcpword"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="34dp"
+        android:id="@+id/dtxteditpword"
+        android:hint="   Password"
+        android:textSize="36sp"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/dtxteditemail"
+        android:layout_alignStart="@+id/dtxteditemail"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <Button
+        android:text="UPDATE ACCOUNT"
+        android:layout_width="300dp"
+        android:id="@+id/dbtnreg"
+        android:background="@drawable/btn"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="40dp"
+        android:layout_height="86dp"
+        android:layout_below="@+id/dtxteditphone"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="113dp"
+        android:id="@+id/dtxteditfname"
+        android:layout_height="93dp"
+        android:textSize="36sp"
+        android:hint="   First Name"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/dtxteditemail" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="93dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="35dp"
+        android:id="@+id/dtxteditsnumber"
+        android:hint="   Student Number"
+        android:textSize="36sp"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/dtxteditlname"
+        android:layout_alignStart="@+id/dtxteditlname" />
+
+</RelativeLayout>
